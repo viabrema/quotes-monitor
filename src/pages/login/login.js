@@ -25,10 +25,6 @@ function Login({ onLogin }) {
                             Esse sistema foi levantado em aproximadamente 12h e trata-se de um monitor de cotações do mercado financeiro em tempo real,  utilizando uma Fake API que gera valores de dados aleatórios com uma grid de cotações em tempo real que interage diretamente com um gráfico desenvolvido manualmente em SVG.
                         </p>
                     </li>)}
-                    {(selectedHelp === 2 && <li>2</li>)}
-                    {(selectedHelp === 3 && <li>3</li>)}
-                    {(selectedHelp === 4 && <li>4</li>)}
-                    {(selectedHelp === 5 && <li>5</li>)}
 
                 </ul>
                 <button type="button" onClick={execute}>Entrar</button>
