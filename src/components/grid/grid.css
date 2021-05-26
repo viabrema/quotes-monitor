@@ -21,7 +21,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: teal;
+    background-color: #537b77;
     color: #fff;
     font-size: 14px;
     height: 30px;
@@ -79,7 +79,8 @@
 
 
 .grid .grid-body .grid-row-selected span{
-    background-color: #aee4e4;
+    background-color: #97A79B;
+    color: #fff;
     
 }
 
@@ -89,13 +90,13 @@
 }
 
 .grid .grid-body span.grid-blink{
-    background-color: #2a2;
+    background-color: #4EB78F;
     color: #fff;
     
 }
 
 .grid .grid-body span.grid-blink-negative{
-    background-color: #C22;
+    background-color: #E3725A;
     color: #fff;
     
 }

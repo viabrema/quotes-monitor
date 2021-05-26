@@ -1,17 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import "./login.css";
 
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-function Login({onLogin}){
+function Login({ onLogin }) {
     const history = useHistory();
+    const [selectedHelp] = useState(1);
 
-    function execute(){
+    function execute() {
         onLogin();
         history.push("/");
     }
 
-    return(
-        <button onClick={execute}>Logar</button>
+    return (
+        <div className="page-login">
+            <div className="wellcome">
+                <ul>
+                    {(selectedHelp === 1 && <li>
+                        <h1>Bem Vindo!</h1>
+                        <p>
+                            Olá <strong>Rafael</strong>, <strong>Gabriel</strong>, ou qualquer outro interessado nessa aplicação que esteja lendo esse texto. Esse monitor de cotações foi desenvolvido para fins didáticos ao mostrar um pouco do meu conhecimento prático com React.
+                        </p>
+                        <p>
+                            Esse sistema foi levantado em aproximadamente 12h e trata-se de um monitor de cotações do mercado financeiro em tempo real,  utilizando uma Fake API que gera valores de dados aleatórios com uma grid de cotações em tempo real que interage diretamente com um gráfico desenvolvido manualmente em SVG.
+                        </p>
+                    </li>)}
+                    {(selectedHelp === 2 && <li>2</li>)}
+                    {(selectedHelp === 3 && <li>3</li>)}
+                    {(selectedHelp === 4 && <li>4</li>)}
+                    {(selectedHelp === 5 && <li>5</li>)}
+
+                </ul>
+                <button type="button" onClick={execute}>Entrar</button>
+            </div>
+        </div>
     )
 }
 

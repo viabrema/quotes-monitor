@@ -15,3 +15,20 @@ h1, h2, h3{
   margin: 0;
   padding: 0;
 }
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #eee;
+  padding: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #537b77;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  opacity: 0.5;
+}

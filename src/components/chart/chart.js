@@ -86,14 +86,14 @@ function Chart({ selectedStock }) {
                     v-if="nullOrEmpityPoints"
                     d={generatePath()}
                     strokeWidth="0"
-                    fill="#34bbbb"
-                    opacity="0.4"
+                    fill="#4EB78F"
+                    opacity="0.5"
                 />
 
                 <path
                     v-if="nullOrEmpityPoints"
                     d={generatePathLine()}
-                    stroke="#008080"
+                    stroke="#375955"
                     strokeWidth="3"
                     fill="transparent"
                     opacity="0.4"
@@ -101,7 +101,7 @@ function Chart({ selectedStock }) {
 
                 <g>
                     {points.map((point, index) => (
-                        <circle key={index} cx={calcPointHPosition(index)} cy={calcPointVPosition(point)} r="3" fill="#008080">
+                        <circle key={index} cx={calcPointHPosition(index)} cy={calcPointVPosition(point)} r="3" fill="#E3725A">
                             <title>{point.toFixed(2)}</title>
                         </circle>
                     ))}

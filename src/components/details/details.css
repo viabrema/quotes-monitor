@@ -19,13 +19,13 @@
 }
 
 .details h1.positive{
-    color: #2a2;
+    color: #4EB78F;
 }
 
 .details h1.negative{
-    color: #C22;
+    color: #E3725A;
 }
 
 .details p strong{
-    color: #008080;
+    color: #E3725A;
 }

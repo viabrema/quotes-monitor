@@ -14,7 +14,7 @@ function PageQuotes() {
 
     return (
         <div className="page-quotes">
-            <header>Cotações</header>
+            <header>Monitor de Cotações</header>
             <section className="chart">
                 <Chart selectedStock={selectedStock}></Chart>
             </section>

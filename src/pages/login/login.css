@@ -1,0 +1,54 @@
+.page-login{
+    height: 100%;
+    background-size: cover;
+    background-image: url("./login-background.png");
+    text-align: center;
+}
+
+.page-login .wellcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    
+}
+
+.page-login .wellcome ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 100px;
+    
+}
+
+.page-login .wellcome button{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 40px;
+    background-color: #8bd5a1;
+    background-image: linear-gradient(to bottom, #85d7a0, #b6d29d);
+    border: solid 1px #405850;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-login .wellcome p{
+    text-align: left;
+}
+
+.page-login .wellcome strong{
+    color: #E3725A;
+}
