@@ -1,0 +1,16 @@
+.page-quotes{
+    display: grid;
+    grid-template-columns: auto 400px;
+    grid-template-rows: 40px 300px minmax(0,1fr);
+    height: 100%;
+}
+
+.page-quotes header{
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #097171;
+    color: #fff;
+}
+
+.page-quotes .grid{
+    grid-area: 2 / 1 / 4 /2;
+}

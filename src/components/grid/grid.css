@@ -1,0 +1,101 @@
+.grid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: fit-content(0) minmax(0, 1fr);
+}
+
+.grid ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid .grid-header{
+    display: flex;
+    overflow: hidden;
+    height: 30px;
+}
+
+.grid .grid-header li{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: teal;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px 2px;
+}
+
+.grid .grid-body{
+    overflow: auto;
+}
+
+.grid .grid-body li{
+    display: flex;
+    height: 30px;
+}
+
+.grid .grid-body li span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: solid 1px #ddd;
+    padding: 5px 2px;
+    font-size: 14px;
+}
+
+.grid .align-right{
+    text-align: right;
+}
+
+.grid .grid-body .commands,
+.grid .grid-header .commands{
+    flex-grow: 1;
+    max-width: none;
+    min-width: none;
+}
+
+.grid .grid-stock{
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.grid .grid-body .grid-stock{
+    font-weight: bold;
+    color: #39a4e2;
+}
+
+.grid .grid-desc{
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.grid .grid-body .grid-desc{
+    font-style: italic;
+    color: #555;
+}
+
+
+.grid .grid-body .grid-row-selected span{
+    background-color: #aee4e4;
+    
+}
+
+.grid .grid-body span{
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.grid .grid-body span.grid-blink{
+    background-color: #2a2;
+    color: #fff;
+    
+}
+
+.grid .grid-body span.grid-blink-negative{
+    background-color: #C22;
+    color: #fff;
+    
+}

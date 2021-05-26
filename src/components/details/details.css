@@ -1,0 +1,31 @@
+.details {
+    padding: 20px;
+}
+.details .stock{
+    font-style: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.details .stock svg{
+    margin-right: 5px;
+}
+
+.details .description{
+    font-style: 14px;
+    font-style: italic;
+    color: #555;
+}
+
+.details h1.positive{
+    color: #2a2;
+}
+
+.details h1.negative{
+    color: #C22;
+}
+
+.details p strong{
+    color: #008080;
+}
